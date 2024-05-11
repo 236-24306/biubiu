@@ -1,0 +1,16 @@
+<!--pages/plugin/love-biubiu/index.wxml-->
+
+<view class="body_left">
+	<image src="./image/biubiu.gif" mode="heightFix" />
+</view>
+<view class="body_right">
+	<view wx:if="{{showImg}}" style="position: absolute;">
+		<image src="./image/beauty.png" style="height: 165rpx;" mode="heightFix" />
+	</view>
+	<view class="love-block {{showOK?'UpMove':''}}">
+		<view style="position: relative;width: 15rpx;height: 15rpx;" wx:for="{{showloveList}}">
+			<image src="./image/love.png" style="position: relative;width: 15rpx;height: 15rpx;" wx:if="{{item == '1'}}"></image>
+		</view>
+	</view>
+
+</view>
